@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:background="#58C648"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GOJEK"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+                </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_hitam"/>
+
+    <GridLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/gomart"
+                android:background="@drawable/menu_gomart"/>
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#251F1F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GoMart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/goride"
+                android:background="@drawable/menu_goride"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#251F1F"
+                android:text="GoRide"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/gofood"
+                android:background="@drawable/menu_gofood"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#251F1F"
+                android:text="GoFood"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_margin="10dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/gosend"
+                android:background="@drawable/menu_gosend"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#251F1F"
+                android:text="GoSend"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>
